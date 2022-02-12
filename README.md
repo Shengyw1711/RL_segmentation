@@ -1,6 +1,6 @@
 # RL_segmentation
 
-This is the code for "Medical Image Segmentation with Deep Reinforcement Learning"
+這是一支“應用深度強化學習方法於醫學影像分割”的程式碼
 
 The proposed model consists of two neural networks. The first is FirstP-Net, whose goal is to find the first edge point and generate a probability map of the edge points positions. The second is NextP-Net, which locates the next point based on the previous edge point and image information. This model segments the image by finding the edge points step by step and ultimately obtaining a closed and accurate segmentation result.
 
