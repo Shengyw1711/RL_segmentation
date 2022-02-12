@@ -73,6 +73,3 @@ Experiment 3: employing the difference IoU reward as the final immediate reward.
 
 Figure 3. The changes in three separate reward values, total reward value, F-measure accuracy and APD accuracy according to the learning iterations during the training process on ACDC dataset.
 
-
-### Comparison with baseline
-<div align=center><img width="550" height="300" src="https://github.com/Mayy1994/RL_segmentation/blob/master/images/Table2.png"/></div>
