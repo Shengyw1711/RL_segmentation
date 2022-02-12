@@ -6,11 +6,11 @@ The proposed model consists of two neural networks. The first is FirstP-Net, who
 
 
 
-Figure 1. The overall process of the proposed system: FirstP-Net finds the first edge point and generates a probability map of edge points positions. NextP-Net locates the next point based on the previous edge point and image information.
+1. The overall process of the proposed system: FirstP-Net finds the first edge point and generates a probability map of edge points positions. NextP-Net locates the next point based on the previous edge point and image information.
 
 
 
-Figure 2. The ground truth (GT) boundary is plotted in blue and the magenta dots are the points found by NextP-Net. The red pentagram represents the first edge point found by FirstP-Net. The first and third rows are the original results and the second and fourth rows are the smoothed results after post-processing.
+2. The ground truth (GT) boundary is plotted in blue and the magenta dots are the points found by NextP-Net. The red pentagram represents the first edge point found by FirstP-Net. The first and third rows are the original results and the second and fourth rows are the smoothed results after post-processing.
 
 
 
