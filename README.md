@@ -2,7 +2,7 @@
 
 這是一支“應用深度強化學習方法於醫學影像分割”的程式碼
 
-整個模型架構由兩個神經網路組成。The first is FirstP-Net, whose goal is to find the first edge point and generate a probability map of the edge points positions. The second is NextP-Net, which locates the next point based on the previous edge point and image information. This model segments the image by finding the edge points step by step and ultimately obtaining a closed and accurate segmentation result.
+整個模型架構由兩個神經網路組成。第一個網路是FirstP-Net，其目標是找到目標物件中的第一個邊緣點並生成可能屬於邊緣點位置的機率圖。 The second is NextP-Net, which locates the next point based on the previous edge point and image information. This model segments the image by finding the edge points step by step and ultimately obtaining a closed and accurate segmentation result.
 
 
 
