@@ -71,7 +71,6 @@ Experiment 2: grayscale layer, Sobel layer, cropped probability map, global prob
 
 Experiment 3: employing the difference IoU reward as the final immediate reward.
 
-![curves](images/Fig9.png)
 Figure 3. The changes in three separate reward values, total reward value, F-measure accuracy and APD accuracy according to the learning iterations during the training process on ACDC dataset.
 
 
