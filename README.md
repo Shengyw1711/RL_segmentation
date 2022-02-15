@@ -32,7 +32,7 @@
 
         git clone https://github.com/Shengyw1711/RL_segmentation.git
 
-2. As we use a crop and resize function like that in Fast R-CNN (https://github.com/longcw/RoIAlign.pytorch) to fix the size of the state, it needs to be built with the right -arch option for Cuda support before training. (https://github.com/multimodallearning/pytorch-mask-rcnn)
+2. 由於系統使用類似 Fast R-CNN (https://github.com/longcw/RoIAlign.pytorch) 中的裁剪和調整大小功能來修復狀態的大小，因此需要在訓練之前使用正確的 -arch 選項來讓 Cuda 套件能夠支援。 (https://github.com/multimodallearning/pytorch-mask-rcnn)
 
     | GPU | arch |
     | --- | --- |
@@ -54,8 +54,6 @@
         cd ../../
         
 3. Run train.py to train the DQN agent on 15 subjects from the ACDC dataset, or you can run val.py to test the proposed model on this dataset.
-
-## Training curves and results
 
 ### Ablation study
 * State: 
