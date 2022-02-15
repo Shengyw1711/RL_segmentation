@@ -2,19 +2,18 @@
 
 這是一支“應用深度強化學習方法於醫學影像分割”的程式碼
 
-整個模型架構由兩個神經網路組成。第一個網路是FirstP-Net，其目標是找到目標物件中的第一個邊緣點並生成可能屬於邊緣點位置的機率圖。整個模型架構由兩個神經網路組成。第一個網路是FirstP-Net，其目標是找到目標物件中的第一個邊緣點並生成可能屬於邊緣點位置的機率圖。第二個網路是NextP-Net，它負責根據之前的邊緣點和圖像訊息來定位下一個點。這支程式的強化學習模型透過逐步尋找邊緣點對圖像進行分割，最終得到一個封閉且準確的分割結果。
+整個模型架構由兩個神經網路組成。第一個網路是FirstP-Net，其目標是找到目標物件中的第一個邊緣點並生成可能屬於邊緣點位置的機率圖。整個模型架構由兩個神經網路組成。第一個網路是FirstP-Net，其目標是找到目標物件中的第一個邊緣點並生成可能屬於邊緣點位置的機率圖。第二個網路是NextP-Net，它負責根據之前的邊緣點和圖像資訊來定位下一個點。這支程式的強化學習模型透過逐步尋找邊緣點對圖像進行分割，最終得到一個封閉且準確的分割結果。
 
 
 
-1. The overall process of the proposed system: FirstP-Net finds the first edge point and generates a probability map of edge points positions. NextP-Net locates the next point based on the previous edge point and image information.
+1. 系統的總體流程：FirstP-Net負責先找到第一個邊緣點並生成邊緣點位置的機率圖。NextP-Net根據前一個邊緣點和圖像資訊定位下一個點。
 
 
 
-2. The ground truth (GT) boundary is plotted in blue and the magenta dots are the points found by NextP-Net. The red pentagram represents the first edge point found by FirstP-Net. The first and third rows are the original results and the second and fourth rows are the smoothed results after post-processing.
+2. 預設情況下Ground Truth(GT)邊界以藍色繪製，洋紅色點是NextP-Net找到的點。紅色五角星代表FirstP-Net找到的第一個邊緣點。
 
 
-
-## Requirements
+## 軟體/套件需求
 * Python2.7
 * torch 0.4.0
 * torchvision 0.2.1
