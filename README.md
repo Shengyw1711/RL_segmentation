@@ -27,10 +27,10 @@
 * scipy
 
 
-## Installation
+## 程式安裝
 1. Clone this repository.
 
-        git clone https://github.com/Mayy1994/RL_segmentation.git
+        git clone https://github.com/Shengyw1711/RL_segmentation.git
 
 2. As we use a crop and resize function like that in Fast R-CNN (https://github.com/longcw/RoIAlign.pytorch) to fix the size of the state, it needs to be built with the right -arch option for Cuda support before training. (https://github.com/multimodallearning/pytorch-mask-rcnn)
 
