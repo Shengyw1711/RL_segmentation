@@ -53,20 +53,18 @@
         python build.py
         cd ../../
         
-3. Run train.py to train the DQN agent on 15 subjects from the ACDC dataset, or you can run val.py to test the proposed model on this dataset.
+3. 執行train.py為經過前處理的影像數據集訓練分割用的深度Q網路(DQN)agent，執行val.py測試訓練好的模型。
 
-### Ablation study
+### 消融研究(可自行測試的控制變量分析)
 * State: 
 
-Experiment 0: grayscale layer, Sobel layer, cropped probability map, global probability map and past points map.
+實驗 0: grayscale layer, Sobel layer, cropped probability map, global probability map and past points map.
 
-Experiment 1: grayscale layer, Sobel layer and past points map layer. 
+實驗 1: grayscale layer, Sobel layer and past points map layer. 
 
-Experiment 2: grayscale layer, Sobel layer, cropped probability map, global probability map.
+實驗 2: grayscale layer, Sobel layer, cropped probability map, global probability map.
 
-* Reward:
+* 獎勵(Reward):
 
-Experiment 3: employing the difference IoU reward as the final immediate reward.
-
-Figure 3. The changes in three separate reward values, total reward value, F-measure accuracy and APD accuracy according to the learning iterations during the training process on ACDC dataset.
+實驗 3: 使用不同的IoU獎勵作為最終的即時獎勵。
 
